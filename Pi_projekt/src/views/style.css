@@ -1,0 +1,286 @@
+.input-fields {
+  margin: 25px 10px;
+  text-align: left;
+}
+
+.logsign {
+  text-align: center;
+  margin: 135px auto 284px auto;
+  width: 312px;
+  border: 2px black solid;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.logsign2 {
+  text-align: center;
+  margin: 161px auto 323px auto;
+  width: 263.4px;
+  border: 2px black solid;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.logsign3 {
+  text-align: center;
+  margin: 161px auto 280px auto;
+  width: 273px;
+  border: 2px black solid;
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.signup-title {
+  margin: 0px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.login {
+  color: orange;
+  text-decoration: none;
+}
+
+.singupbackground {
+  background-color: black;
+  color: white;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.submit {
+  border: 0px;
+  border-radius: 10px;
+  background-color: lightblue;
+  padding: 5px 10px;
+  box-shadow: 1px 2px 5px gray;
+}
+
+.submit:hover {
+  background-color: blue;
+  color: white;
+}
+
+.card-container {
+  width: 130px;
+  max-width: 150px;
+  height: 150px;
+  max-height: 100%;
+  background-color: aliceblue;
+  margin: auto;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  margin: 10px auto;
+  padding: 30px 35px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: normal; /* Reset line-height */
+  font-size: 16px; /* Reset font-size */
+  overflow: hidden;
+}
+
+.card-container:hover {
+  background-color: lightsteelblue;
+  color: white;
+
+  .gmailmatch{
+  background-color: white;
+}
+}
+
+.gmailmatch {
+  border: 1px solid #d9d9d9;
+  height: 0.5px;
+  background-color: black;
+  color: black;
+  padding: 1px 45px;
+  width: 45px;
+  overflow: hidden;
+  user-select: none;
+  
+}
+
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3px 40px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 40px;
+  display: inline-block;
+}
+
+header a:hover {
+  color: lightblue;
+}
+
+.logout {
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.logout:hover {
+  background-color: darkred;
+  color: white;
+}
+
+header img {
+  width: 85px;
+  height: 85px;
+  padding-top: 0px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 8px;
+  padding-top: 2px;
+  margin-top: auto;
+}
+
+.logintext {
+  margin-top: 25px;
+}
+
+.signup-under {
+  margin-bottom: 0px;
+}
+
+.links {
+  margin: 100px auto;
+  margin-bottom: 10px;
+  width: fit-content; /* Adjust width as needed */
+}
+
+.inputseperation {
+  margin: 0 25px;
+  padding: 5px 10px;
+}
+
+.showcase-box {
+  width: 1700px;
+  height: 550px;
+  margin: 35px auto 46px auto;
+  background-color: aliceblue;
+  display: flex; /* Add this */
+  flex-wrap: wrap; /* Allow wrapping to next line */
+  gap: 24px; /* Optional: space between cards */
+  align-items: flex-start; /* Align cards to the top */
+  overflow-y: auto;
+  font-size: 24px;
+}
+
+.gym {
+  height: auto;
+  width: auto;
+  max-width: 1000px;
+  max-height: 500px;
+  margin-left: 140px;
+  margin-right: auto;
+  margin-top: 125px;
+  margin-bottom: 136px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.gym:hover {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
+}
+
+.text {
+  width: 25%;
+  margin-left: 145px;
+  margin-bottom: 265px;
+  background-color: aliceblue;
+  padding-left: 30px;
+  padding-bottom: 60px;
+  padding-right: 10px;
+}
+
+.columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.x-button {
+  background-color: red;
+  color: black;
+  border: 2px ridge white;
+  font-weight: bold;
+  padding: 1px 4px;
+  padding-top: 0;
+  margin-bottom: 8px;
+  margin-left: auto;
+  text-align: center;
+}*/
+
+.ul-0top {
+  margin-top: 5px;
+}
+
+.x-button:hover {
+  background-color: darkred;
+  color: white;
+}
+
+.returnmargin {
+  margin-bottom: 0px;
+  margin-top: 23px;
+}
+
+.remove-ad {
+  text-align: right;
+}
+
+.remove-ad-button {
+  border: 0px;
+  background-color: transparent;
+  font-size: 15px;
+  margin-right: 130px;
+  color: purple;
+}
+
+.remove-ad-button:hover {
+  text-decoration: underline;
+}
