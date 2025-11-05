@@ -14,7 +14,7 @@
         v-model="search.text"
         type="search"
         id="Search"
-        placeholder="Find you ad(email...)"
+        placeholder="Filter ads..."
         class="inputseperation"
       />
       <router-link to="/fill-out">
