@@ -116,7 +116,13 @@ export default {
       for (let ad of this.oglasi.oglasi) {
         // 1 oglas iz arraya
         // console.log(ad.mail); // svaki put kad se search.text promijeni ponovno se zove funckija jer dobije nove vrijednosti pa se udpatea
-        if (ad.mail.indexOf(text) >= 0) {
+        if (
+          Object.values(ad).some(
+            (item) =>
+              String(item).toLowerCase().includes(text.toLowerCase()) &&
+              !item.includes("@")
+          )
+        ) {
           // ako postoji slovo(vece od -1)
           newarray.push(ad);
         }
