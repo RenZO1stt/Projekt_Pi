@@ -86,20 +86,21 @@ export default {
       if (this.password !== this.repeatPassword) {
         alert("Passwords do not match!");
         return;
-      }
-      // Here you would typically send the signup data to your server
+      } else {
+        createUserWithEmailAndPassword(auth, this.username, this.password)
+          .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            console.log("Signup successful:", user);
+            // You can redirect the user or show a success message here
+          })
+          .catch((error) => {
+            console.error("Error during signup:", error.message);
+            alert(`Error: ${error.message}`);
+          });
 
-      createUserWithEmailAndPassword(auth, this.username, this.password)
-        .then((userCredential) => {
-          // Signed in
-          const user = userCredential.user;
-          console.log("Signup successful:", user);
-          // You can redirect the user or show a success message here
-        })
-        .catch((error) => {
-          console.error("Error during signup:", error.message);
-          alert(`Error: ${error.message}`);
-        });
+        this.$router.replace({ path: "/" });
+      }
     },
   },
 };
