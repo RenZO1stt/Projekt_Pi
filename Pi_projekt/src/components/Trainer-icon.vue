@@ -1,5 +1,5 @@
 <template>
-  <div class="card-container" :data-instance="_uid">
+  <div class="card-container">
     <div class="gmailmatch">{{ oglas.mail }}</div>
 
     <div class="coachname">
